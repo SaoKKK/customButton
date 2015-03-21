@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  CCButton.h
 //  customButton
 //
 //  Created by 河野 さおり on 2014/08/11.
@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
-@property (weak) IBOutlet NSTextField *txtState;
+@interface CCButton : NSButton{
+    NSString *icnName;
+    BOOL enterFlg;
+}
 
 @end

@@ -18,6 +18,13 @@
 		B90873B8199908AE0061CFE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9087397199908AD0061CFE3 /* Cocoa.framework */; };
 		B90873C0199908AE0061CFE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B90873BE199908AE0061CFE3 /* InfoPlist.strings */; };
 		B90873C2199908AE0061CFE3 /* customButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B90873C1199908AE0061CFE3 /* customButtonTests.m */; };
+		B90873E519990A500061CFE3 /* icnAct_down.png in Resources */ = {isa = PBXBuildFile; fileRef = B90873CC19990A500061CFE3 /* icnAct_down.png */; };
+		B90873E619990A500061CFE3 /* icnAct_off.png in Resources */ = {isa = PBXBuildFile; fileRef = B90873CD19990A500061CFE3 /* icnAct_off.png */; };
+		B90873E719990A500061CFE3 /* icnAct_on.png in Resources */ = {isa = PBXBuildFile; fileRef = B90873CE19990A500061CFE3 /* icnAct_on.png */; };
+		B908740319990D5D0061CFE3 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B908740219990D5D0061CFE3 /* CCButton.m */; };
+		B9F32B291ABD2CE500CC5ABA /* icnMGroup_down.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F32B261ABD2CE500CC5ABA /* icnMGroup_down.png */; };
+		B9F32B2A1ABD2CE500CC5ABA /* icnMGroup_off.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F32B271ABD2CE500CC5ABA /* icnMGroup_off.png */; };
+		B9F32B2B1ABD2CE500CC5ABA /* icnMGroup_on.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F32B281ABD2CE500CC5ABA /* icnMGroup_on.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,14 @@
 		B90873BD199908AE0061CFE3 /* customButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "customButtonTests-Info.plist"; sourceTree = "<group>"; };
 		B90873BF199908AE0061CFE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B90873C1199908AE0061CFE3 /* customButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customButtonTests.m; sourceTree = "<group>"; };
+		B90873CC19990A500061CFE3 /* icnAct_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icnAct_down.png; sourceTree = "<group>"; };
+		B90873CD19990A500061CFE3 /* icnAct_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icnAct_off.png; sourceTree = "<group>"; };
+		B90873CE19990A500061CFE3 /* icnAct_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icnAct_on.png; sourceTree = "<group>"; };
+		B908740119990D5D0061CFE3 /* CCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButton.h; sourceTree = "<group>"; };
+		B908740219990D5D0061CFE3 /* CCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCButton.m; sourceTree = "<group>"; };
+		B9F32B261ABD2CE500CC5ABA /* icnMGroup_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icnMGroup_down.png; sourceTree = "<group>"; };
+		B9F32B271ABD2CE500CC5ABA /* icnMGroup_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icnMGroup_off.png; sourceTree = "<group>"; };
+		B9F32B281ABD2CE500CC5ABA /* icnMGroup_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icnMGroup_on.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +132,10 @@
 			children = (
 				B90873A9199908AD0061CFE3 /* AppDelegate.h */,
 				B90873AA199908AD0061CFE3 /* AppDelegate.m */,
+				B908740119990D5D0061CFE3 /* CCButton.h */,
+				B908740219990D5D0061CFE3 /* CCButton.m */,
 				B90873AC199908AD0061CFE3 /* MainMenu.xib */,
+				B90873CB19990A500061CFE3 /* Graphics */,
 				B90873AF199908AD0061CFE3 /* Images.xcassets */,
 				B908739E199908AD0061CFE3 /* Supporting Files */,
 			);
@@ -152,6 +170,19 @@
 				B90873BE199908AE0061CFE3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B90873CB19990A500061CFE3 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				B9F32B261ABD2CE500CC5ABA /* icnMGroup_down.png */,
+				B9F32B271ABD2CE500CC5ABA /* icnMGroup_off.png */,
+				B9F32B281ABD2CE500CC5ABA /* icnMGroup_on.png */,
+				B90873CC19990A500061CFE3 /* icnAct_down.png */,
+				B90873CD19990A500061CFE3 /* icnAct_off.png */,
+				B90873CE19990A500061CFE3 /* icnAct_on.png */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +261,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F32B291ABD2CE500CC5ABA /* icnMGroup_down.png in Resources */,
 				B90873A2199908AD0061CFE3 /* InfoPlist.strings in Resources */,
+				B90873E519990A500061CFE3 /* icnAct_down.png in Resources */,
+				B9F32B2B1ABD2CE500CC5ABA /* icnMGroup_on.png in Resources */,
 				B90873B0199908AD0061CFE3 /* Images.xcassets in Resources */,
+				B90873E619990A500061CFE3 /* icnAct_off.png in Resources */,
 				B90873A8199908AD0061CFE3 /* Credits.rtf in Resources */,
 				B90873AE199908AD0061CFE3 /* MainMenu.xib in Resources */,
+				B90873E719990A500061CFE3 /* icnAct_on.png in Resources */,
+				B9F32B2A1ABD2CE500CC5ABA /* icnMGroup_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +291,7 @@
 			files = (
 				B90873AB199908AD0061CFE3 /* AppDelegate.m in Sources */,
 				B90873A4199908AD0061CFE3 /* main.m in Sources */,
+				B908740319990D5D0061CFE3 /* CCButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +428,7 @@
 				GCC_PREFIX_HEADER = "customButton/customButton-Prefix.pch";
 				INFOPLIST_FILE = "customButton/customButton-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,6 +442,7 @@
 				GCC_PREFIX_HEADER = "customButton/customButton-Prefix.pch";
 				INFOPLIST_FILE = "customButton/customButton-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -424,6 +464,7 @@
 				);
 				INFOPLIST_FILE = "customButtonTests/customButtonTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -442,6 +483,7 @@
 				GCC_PREFIX_HEADER = "customButton/customButton-Prefix.pch";
 				INFOPLIST_FILE = "customButtonTests/customButtonTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -466,6 +508,7 @@
 				B90873C7199908AE0061CFE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B90873C8199908AE0061CFE3 /* Build configuration list for PBXNativeTarget "customButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +517,7 @@
 				B90873CA199908AE0061CFE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

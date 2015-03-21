@@ -8,11 +8,17 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate (){
+    __weak IBOutlet NSButton *pshMGroup;
+}
+@end
+
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+@synthesize txtState;
+
+- (IBAction)chkBtnEnabled:(id)sender {
+    [pshMGroup setEnabled:[sender state]];
 }
 
 @end
