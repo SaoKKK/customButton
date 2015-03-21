@@ -9,8 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface CCButton : NSButton{
-    NSString *icnName;
-    BOOL enterFlg;
 }
 
 @end

@@ -9,7 +9,10 @@
 #import "CCButton.h"
 #import "AppDelegate.h"
 
-@implementation CCButton
+@implementation CCButton{
+    NSString *icnName;
+    BOOL enterFlg;
+}
 
 -(id)init{
     self = [super init];
