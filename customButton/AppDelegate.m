@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (){
-    __weak IBOutlet NSButton *pshMGroup;
+    IBOutlet CCButton *pshMGroup;
+    IBOutlet CCButton *btn1;
 }
 @end
 
@@ -19,6 +20,9 @@
 
 - (IBAction)chkBtnEnabled:(id)sender {
     [pshMGroup setEnabled:[sender state]];
+}
+- (IBAction)chkBtnEnabled2:(id)sender {
+    [btn1 setEnabled:[sender state]];
 }
 
 @end

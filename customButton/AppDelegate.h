@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CCColoredTitleButton.h"
+#import "CCButton.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 

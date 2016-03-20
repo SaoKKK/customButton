@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -14,10 +14,9 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="pshAllDel" destination="2BI-yB-pFH" id="QU5-wd-3lz"/>
+                <outlet property="btn1" destination="rva-nI-VwN" id="mRI-P3-aem"/>
                 <outlet property="pshMGroup" destination="2BI-yB-pFH" id="GBQ-JB-90f"/>
                 <outlet property="txtState" destination="Icz-r5-twj" id="7Ld-fy-ICB"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -679,8 +678,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="225" height="110"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TIV-xq-wh1">
-                        <rect key="frame" x="119" y="52" width="88" height="28"/>
+                    <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="TIV-xq-wh1" customClass="CCColoredTitleButton">
+                        <rect key="frame" x="119" y="43" width="88" height="28"/>
                         <buttonCell key="cell" type="check" title="ボタン使用可" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" inset="2" id="QaJ-LB-vhx">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" size="11" name="HiraKakuProN-W3"/>
@@ -690,7 +689,7 @@
                         </connections>
                     </button>
                     <button identifier="Act" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rva-nI-VwN" customClass="CCButton">
-                        <rect key="frame" x="20" y="66" width="83" height="24"/>
+                        <rect key="frame" x="20" y="76" width="83" height="24"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icnAct_off" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="U9C-AT-Hn1">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -711,6 +710,16 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-ne-6N7" customClass="CCColoredTitleButton">
+                        <rect key="frame" x="23" y="43" width="88" height="28"/>
+                        <buttonCell key="cell" type="check" title="ボタン使用可" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="mPa-9O-MUf">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" size="11" name="HiraKakuProN-W3"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="chkBtnEnabled2:" target="Voe-Tx-rLC" id="GYb-pN-6Ik"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="129.5" y="314"/>
